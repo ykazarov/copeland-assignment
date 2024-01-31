@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0"/>
+        <PackageReference Include="Moq" Version="4.20.70" />
+        <PackageReference Include="NUnit" Version="3.13.3"/>
+        <PackageReference Include="NUnit3TestAdapter" Version="4.2.1"/>
+        <PackageReference Include="NUnit.Analyzers" Version="3.6.1"/>
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\copeland.assignment.core\copeland.assignment.core.csproj" />
+      <ProjectReference Include="..\copeland.assignment.models\copeland.assignment.models.csproj" />
+      <ProjectReference Include="..\copeland.assignment.services\copeland.assignment.services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="assets\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="assets\foo1.json" />
+      <Resource Include="assets\foo1.json" />
+      <None Remove="assets\foo2.json" />
+      <Resource Include="assets\foo2.json" />
+    </ItemGroup>
+
+</Project>

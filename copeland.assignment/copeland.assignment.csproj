@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="8.0.0" />
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="Oakton" Version="6.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\copeland.assignment.models\copeland.assignment.models.csproj" />
+      <ProjectReference Include="..\copeland.assignment.services\copeland.assignment.services.csproj" />
+    </ItemGroup>
+
+</Project>
